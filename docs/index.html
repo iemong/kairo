@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- meta-->
+    <title>kayac-html5-starter</title>
+    <meta name="description" content="kayac-html5-starter web page.">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <!-- smartphone meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <!-- ogp-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="kayac-html5-starter">
+    <meta property="og:site_name" content="kayac-html5-starter">
+    <meta property="og:description" content="kayac-html5-starter web page.">
+    <meta property="og:locale" content="ja_JP">
+    <!-- twitter card-->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="kayac-html5-starter">
+    <meta property="twitter:description" content="kayac-html5-starter web page.">
+    <!-- stylesheet-->
+  <link href="css/style.css?9fab44983fa601232fd0" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <div id="canvas__wrap">
+          <canvas id="canvas__wrap__physics"></canvas>
+        </div>
+        <div class="acceleration">
+          <div class="acceleration__detection">
+            <ul>
+              <li>加速度センサーの値</li>
+              <li id="acceleration__detection__x">x軸の角度</li>
+              <li id="acceleration__detection__y">y軸の角度</li>
+              <li id="acceleration__detection__z">z軸の角度</li>
+            </ul>
+          </div>
+        </div>
+        <div class="gyro">
+          <div class="gyro__detection">
+            <ul>
+              <li>ジャイロセンサーの値</li>
+              <li id="gyro__detection__x">x軸の角度</li>
+              <li id="gyro__detection__y">y軸の角度</li>
+              <li id="gyro__detection__z">z軸の角度  </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mattar__gyro">
+          <div class="mattar__gyro__detection">
+            <ul>
+              <li>mattatrの重力数値</li>
+              <li id="mattar__gyrodetection__detection__x">x軸の重力</li>
+              <li id="mattar__gyrodetection__detection__y">y軸の重力</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+  <script type="text/javascript" src="js/script.js?9fab44983fa601232fd0"></script></body>
+</html>
