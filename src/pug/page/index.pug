@@ -1,0 +1,45 @@
+extends /layout/_default-layout
+
+prepend config-block
+  - page_name = ''
+
+//- append stylesheet-block
+
+prepend javascript-block
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js")
+
+block content-block
+  main
+    #canvas__wrap
+      canvas#canvas__wrap__physics
+    .acceleration
+      .acceleration__detection
+        ul
+          li
+            | 加速度センサーの値
+          li#acceleration__detection__x
+            | x軸の角度
+          li#acceleration__detection__y
+            | y軸の角度
+          li#acceleration__detection__z
+            | z軸の角度
+    .gyro
+      .gyro__detection
+        ul
+          li
+            | ジャイロセンサーの値
+          li#gyro__detection__x
+            | x軸の角度
+          li#gyro__detection__y
+            | y軸の角度
+          li#gyro__detection__z
+            | z軸の角度  
+    .mattar__gyro
+      .mattar__gyro__detection
+        ul
+          li
+            | mattatrの重力数値
+          li#mattar__gyrodetection__detection__x
+            | x軸の重力
+          li#mattar__gyrodetection__detection__y
+            | y軸の重力
